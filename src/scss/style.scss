@@ -1,3 +1,19 @@
+
+
+@import '../../node_modules/normalize.css/normalize.css';
+@import '../../node_modules/swiper/swiper.scss';
+@import './header.scss';
+@import './nav.scss';
+@import './main.scss';
+@import './brands.scss';
+@import './aside.scss';
+@import './modals.scss';
+@import './devices.scss';
+@import './components.scss';
+@import './prices.scss';
+@import './slider.scss';
+@import './footer.scss';
+
 $bgColor: #F8F8F8;
 $altBgColor: #FFFFFF;
 $text: #1B1C21;
@@ -16,22 +32,6 @@ $md1: $maxWidthContainer + 12;
 $md2: 991.98;
 $md3: 767.98;
 $md4: 479.98;
-
-
-@import '../../node_modules/normalize.css/normalize.css';
-@import '../../node_modules/swiper/swiper.scss';
-@import './header.scss';
-@import './nav.scss';
-@import './main.scss';
-@import './brands.scss';
-@import './aside.scss';
-@import './modals.scss';
-@import './devices.scss';
-@import './components.scss';
-@import './prices.scss';
-@import './slider.scss';
-@import './footer.scss';
-
 
 
 
