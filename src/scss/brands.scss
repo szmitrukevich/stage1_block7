@@ -1,0 +1,111 @@
+.brands {
+    background-color: $bgColor;
+    @media (min-width: 1120px) {
+        margin-left: 308px;
+    }
+
+    &__box {
+        background-color: $bgColor;
+        @media (min-width: 768px) {
+            display: block;
+        }
+    }
+
+
+    &__item {
+        padding: 16px 20px;
+        align-items: center;
+        justify-content: space-between;
+        height: 72px;
+        }
+
+    &__image-slider {
+        position: relative;
+    }
+
+
+    .image-slider__slide {
+    background-color: $altBgColor;
+    border: 1px solid #EAEAEA;
+    border-radius: 5px;
+    padding: 12px 20px 16px 20px;
+    box-sizing: border-box;
+    width: 240px;
+    @media (min-width: 768px) {
+        width: 224px; 
+    }
+
+    @media (min-width: 1120px) {
+        width: 240px; 
+    }
+    height: 72px;
+    }
+
+    .image-slider__image {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    }
+    
+    .swiper-pagination {
+        @media (min-width: 321px) {
+            display: none;   
+        }
+        background-color: $bgColor;
+        max-height: 40px;
+        display: flex;
+        position: absolute;
+        top: 90px;
+        justify-content: center;
+        z-index: 10;
+        &-bullet {
+            background-color: #DDDDDD;
+            opacity: 1;
+            height: 12px;
+            width: 12px;
+            border-radius: 50%; 
+            margin: 0 6px;
+            &-active {
+                background-color:#B5B6BC;
+            }
+      }
+      }
+      
+      .swiper-container {
+        overflow-x: hidden;
+        height: 110px;
+        @media (min-width: 321px) {
+        height: auto;
+        }
+      }
+      
+      .swiper-slide {
+        background-color: $altBgColor;
+      }
+      
+      .swiper-wrapper {
+        background-color: $bgColor;
+        @media (min-width: 321px) {
+        display: grid;
+        grid-template-columns: repeat(3, 224px);
+        row-gap: 16px;
+        column-gap: 24px;
+        padding-top: 24px; 
+        transition: height 0.3s;
+        margin: 0px;
+        height: 160px;
+        overflow-y: hidden;
+
+        @media (min-width: 1200px) {
+            column-gap: 40px;
+        }
+        @media (min-width: 1400px) {
+            column-gap: 32px;
+            grid-template-columns: repeat(4, 240px);
+        }
+        }
+      
+        }
+
+
+    }

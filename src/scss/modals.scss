@@ -1,0 +1,150 @@
+.modals {
+    
+
+    &__feedback, &__callback {     
+        position: fixed;
+        top:0;
+        left: -500px;
+        transition: left 0.3s;
+        max-width: 320px;
+        height: 676px;
+        background-color: $altBgColor;
+        z-index: 100;
+        margin: 0;
+        @media (min-width: 1120px){
+            box-shadow: 10px 0px 50px 0px gray;
+            max-width: 440px;
+            height: 100vh;
+            transition: right 1s;
+            transition: left 1s;
+        }
+        
+    }
+    
+    & .container {
+        width: 90%;
+        position: relative;
+
+        @media (min-width: 1120px){
+            width: 85%;
+        }
+    }
+
+    &__overlay {
+        width: 100%;
+        height: 100vh;
+        background-color: $altBgColor;
+        opacity: 0.9;
+        transition: opacity 1s;
+        z-index: 90;
+        position: fixed;
+        top: 0;
+        left: -2000px;
+    }
+
+    &__back {
+        position: absolute;
+        top: 24px;
+        @media (min-width: 1120px) {
+            top: 35px;
+            left: -100px;
+        }
+        }
+
+    &__title {
+        position: relative;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 40px;
+        padding-top: 104px;
+        margin: 0;
+        margin-bottom: 24px;
+        @media (min-width: 1120px) {
+            padding-top: 40px;
+            }
+        
+        &::before {
+            content:'';
+            position: absolute;
+            width:40px;
+            height: 4px;
+            background-color: $dgnColor;
+            border-radius: 5px 5px 0 0;
+            transform: rotate(90deg) translate(13px, 35px);
+    
+            @media (min-width: 1120px) {
+                transform: rotate(90deg) translate(13px, 55px);
+            }
+
+        }
+    }
+
+
+
+    &__input {
+        display: block;
+        border: 1px solid $altDgnBorderColor;
+        border-radius: 8px;
+        width: 100%;
+        height: 48px;
+        margin-bottom: 16px;
+        
+        &::placeholder {
+            color: #B5B6BC;
+            padding: 12px;
+        }
+    }
+
+    .big {
+        height: 118px;
+        &::placeholder {
+            vertical-align:top;
+        }
+    }
+
+    &__text {
+        color: $altText;
+        font-size: 14px;
+        padding-right: 20px;
+        margin-bottom: 23px;
+    }
+    &__link {
+        color: $btnColor;
+    }
+
+    &__button {
+            background-color: $btnColor;
+            height: 32px;
+            width: 136px;
+            border-radius: 16px;
+            font-size: 12px;
+            line-height: 24px;
+            font-weight: 700;
+            color: $bgColor;
+            text-align: left;
+            left: 152px;
+            cursor: pointer;
+            @media (min-width: 1120px) {
+                left: 240px;
+            }
+            position: relative;
+            border: none;
+
+            &::placeholder {
+                padding: 16px;
+                font-weight: 30px;
+            }
+            &::after {
+                content: "";
+                border-right: 2px solid $altBgColor;
+                border-bottom: 2px solid $altBgColor;
+                width: 6px;
+                height: 6px;
+                transform: rotate(-45deg);
+                position: absolute;
+                top: 10px;
+                left: 95px;
+            }
+        }
+
+}

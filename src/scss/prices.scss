@@ -1,0 +1,200 @@
+.prices {
+    font-size: 14px;
+    margin: 24px 0 16px 0;
+    @media (min-width: 1120px) {
+        margin-left: 308px;     
+    }
+
+    
+
+    .table {
+        text-align: left;
+        margin-top: 21px;
+        border-collapse: collapse;
+        @media (max-width: 321px) {
+            display: none;
+        }
+        &__body{
+        margin-right: 0;
+        padding: 0;
+        background-color: $altBgColor;
+        border-radius: 6px;
+        }
+
+        thead {
+            @media (max-width: 321px) {
+                display: none;
+            }
+        }
+        th {
+            padding-bottom: 10px;
+            
+        }
+
+        &__header {
+            background-color: $bgColor;
+            vertical-align: bottom;
+            border: none;
+            color: $altText;
+            font-weight: 400;
+            margin-top: 30px;
+        }
+
+
+        &__cell {
+            height: 64px;
+            padding: 0;
+            @media (max-width: 321px){
+                padding: 16px;
+                padding-top: 30px;
+            }
+            &--big {
+                @media (max-width: 321px){
+                    width: 228px;
+                }
+                width: 375px;
+                @media (min-width: 1120px) {
+                    width: 485px;
+                    padding-left: 18px;
+                }
+
+            }
+            &--medium {
+                width: 100px;
+                @media (min-width: 1120px) {
+                    width: 165px;
+                }
+            }
+
+            &:last-child {
+                width: 140px;
+                @media (min-width: 1120px) {
+                    width: 250px;
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: center;
+                }
+            }
+        }
+        &__button {
+            background-color: $btnColor;
+            height: 30px;
+            width: 125px;
+            border-radius: 16px;
+            font-size: 12px;
+            line-height: 24px;
+            font-weight: 700;
+            color: $altBgColor;
+            text-align: left;
+            padding-left: 12px;
+            position: relative;
+            @media (max-width: 321px){
+                transform: translate(125px, -20px);
+            };
+            @media (min-width: 1120px) {
+                transform: translateX(-24px);
+            }
+            &::after {
+                content: "";
+                border-right: 2px solid $altBgColor;
+                border-bottom: 2px solid $altBgColor;
+                width: 6px;
+                height: 6px;
+                transform: rotate(-45deg);
+                position: absolute;
+                top: 10px;
+                left: 95px;
+            }
+        }
+    }
+
+  
+
+    &__clarification {
+        margin-top: 24px;
+        font-size: 14px;
+        padding-right: 30px;
+        line-height: 20px;
+        @media (min-width: 768px) {
+        width: 420px;
+        padding-right: 0;
+        }
+    }
+
+    &__name {
+        margin-top: 16px;
+        font-size: 14px;
+        margin-left: 16px;
+        color:$altText;
+    }
+    &__text {
+        margin-top: 4px;
+        margin-left: 16px;
+        font-size: 14px;
+    }
+
+    &__button {
+        margin-top: 16px;
+        font-weight: 500;
+        position: relative;
+        padding-right: 40px;
+        text-align: left;
+        &::after {
+                border-right: 2px solid $btnColor;
+                border-bottom: 2px solid $btnColor;
+                width: 6px;
+                height: 6px;
+                transform: rotate(-45deg);
+                position: absolute;
+                top: 0px;
+                left: 0px;
+        }
+    }
+       
+    .swiper-container {
+        overflow-x: hidden;
+        position: relative;
+        height: 230px;
+        @media (min-width: 321px) {
+            display: none;
+        }
+    }
+    .swiper-pagination {
+        @media (min-width: 321px) {
+            display: none;   
+        }
+        background-color: $bgColor;
+        max-height: 40px;
+        display: flex;
+        position: absolute;
+        top: 210px;
+        justify-content: center;
+        &-bullet {
+            background-color: #DDDDDD;
+            opacity: 1;
+            height: 12px;
+            width: 12px;
+            border-radius: 50%; 
+            margin: 0 6px;
+            &-active {
+                background-color:#B5B6BC;
+            }
+      }
+      }
+
+      .swiper-slide {
+        @media (max-width: 321px) {
+            display: flex; 
+            flex-direction: column;  
+            align-items: flex-start;  
+            justify-content: space-between;
+            border: 1px solid #EAEAEA;
+            border-radius: 5px;
+            box-sizing: border-box;
+            height: 200px;
+            width: 260px;
+            background-color: $altBgColor;
+        }
+      }
+    
+}
