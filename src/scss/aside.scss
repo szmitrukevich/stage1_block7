@@ -10,6 +10,10 @@
         transition: none;
         z-index: 80;
     }
+    @media (min-width: 1450px) {
+        position: absolute;
+        top: -35px;
+    }
 
     &__container {
         width: 320px;

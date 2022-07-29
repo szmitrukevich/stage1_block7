@@ -46,8 +46,8 @@ let isAboutShown = false;
 
 let brandsButton = document.querySelector('.brands__show-more');
 let brandsGrid = document.querySelector('.brands__grid');
-let brandsBox = document.querySelector('.brands__box');
 let brandsSlider = document.querySelector('.brands__image-slider');
+let isBrandsShown = true;
 
 let devicesButton = document.querySelector('.devices__show-more');
 let devicesGrid = document.querySelector('.devices__grid');
@@ -85,13 +85,29 @@ else
 }
 });
 
+brandsButton.addEventListener("click", function() {
+  if (isBrandsShown) {
+  isBrandsShown = false;
+  transform = 'rotate(225deg)';
+  brandsButton.style.setProperty('--sq-transform', transform);
+  brandsButton.innerText = "Скрыть";
+  brandsGrid.style.height =  brandsGrid.scrollHeight + "px";
+} else {
+  isBrandsShown = true;
+  transform = 'rotate(45deg)';
+  brandsButton.style.setProperty('--sq-transform', transform);
+  brandsButton.innerText = "Показать все";
+  brandsGrid.style.height =  "160px";
+}
+});
+
 devicesButton.addEventListener("click", function() {
   if (isDevicesShown) {
   isDevicesShown = false;
   transform = 'rotate(225deg)';
   devicesButton.style.setProperty('--sq-transform', transform);
   devicesButton.innerText = "Скрыть";
-  devicesGrid.style.height =  "360px";
+  devicesGrid.style.height =  devicesGrid.scrollHeight + "px";
 } else {
   isDevicesShown = true;
   transform = 'rotate(45deg)';
@@ -101,23 +117,6 @@ devicesButton.addEventListener("click", function() {
 }
 });
 
-function showFullText(ev) {
-    var transform;
-    if(ev.getAttribute('data-show') === "true") {
-        ev.innerText = "Скрыть";
-        ev.setAttribute('data-show', "false"); 
-        brandsGrid.style.height = brandsGrid.scrollHeight + "px";
-        transform = 'rotate(225deg)';
-        brandsButton.style.setProperty('--sq-transform', transform);
-    }
-    else {
-        ev.innerText = "Показать все";
-        ev.setAttribute('data-show', "true"); 
-        brandsGrid.style.height = '160px';
-        transform = 'rotate(45deg)';
-        brandsButton.style.setProperty('--sq-transform', transform);
-    } 
-}
 
 
 

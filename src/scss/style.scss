@@ -1,5 +1,6 @@
-
-
+@import './var.scss';
+@import './fonts.scss';
+@import './components.scss';
 @import '../../node_modules/normalize.css/normalize.css';
 @import '../../node_modules/swiper/swiper.scss';
 @import './header.scss';
@@ -9,55 +10,6 @@
 @import './aside.scss';
 @import './modals.scss';
 @import './devices.scss';
-@import './components.scss';
 @import './prices.scss';
 @import './slider.scss';
 @import './footer.scss';
-
-$bgColor: #F8F8F8;
-$altBgColor: #FFFFFF;
-$text: #1B1C21;
-$altText: #7E7E82;
-$dgnBorderColor: #B8FFEC;
-$altDgnBorderColor: #EAEAEA;
-$dgnColor: #41F6D7;
-$btnColor: #FF3E79;
-$gradient: linear-gradient(to right, #F8F8F8, #FFFFFF);
-
-
-$minWidth: 320px;
-$maxWidth: 1920;
-$maxWidthContainer: 1120;
-$md1: $maxWidthContainer + 12;
-$md2: 991.98;
-$md3: 767.98;
-$md4: 479.98;
-
-
-
-@font-face {
-    font-family: 'TT Lakes';
-    src: local('TT Lakes'), url('../../src/fonts/TTLakes-Regular.woff') format('woff');
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'TT Lakes';
-    src: local('TT Lakes'), url('../../src/fonts/TTLakes-Medium.woff') format('woff');
-    font-weight: 500;
-    font-style: medium;
-    font-display: swap;
-}
-@font-face {
-    font-family: 'TT Lakes';
-    src: local('TT Lakes'), url('../../src/fonts/TTLakes-Bold.woff') format('woff');
-    font-weight: 700;
-    font-style: bold;
-    font-display: swap;
-}
-
-
-
-

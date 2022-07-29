@@ -13,6 +13,63 @@
 
 
 <body>
+
+  <aside class="aside mobile-menu">
+    <div class="mobile-menu__container">
+        <div class="mobile-menu__box">
+      
+            <header class="mobile-menu__header">
+                
+                <div class="header__wrapper">
+                <button class="mobile-menu__button popup-button" href="#"><img src="./img/back.svg"></button>
+                <a href="#" class="mobile-menu__logo"><img src="./img/logo.svg"></a>
+                </div>
+                <div class="mobile-menu__wrapper">
+                  <button class="mobile-menu__button" href="#"><img src="./img/search.svg"></button>
+                </div>
+            </header>
+        
+            <nav class = "mobile-menu__nav">
+                <ul class="mobile-menu__list">
+                    <li class="mobile-menu__item"><a class="nav__link" href="#">Ремонт техники</a></li>
+                    <li class="mobile-menu__item"><a class="nav__link" href="#">Услуги и сервисы</a></li>
+                    <li class="mobile-menu__item"><a class="nav__link" href="#">Корпоративным клиентам</a></li>
+                    <li class="mobile-menu__item"><a class="nav__link" href="#">Продавцам техники</a></li>
+                    <li class="mobile-menu__item"><a class="nav__link" href="#">Партнерам</a></li>
+                    <li class="mobile-menu__item"><a class="nav__link" href="#">Производителям</a></li>
+                    <li class="mobile-menu__item"><a class="nav__link" href="#">Наши сервисные центры</a></li>
+                    <li class="mobile-menu__item"><a class="nav__link" href="#">Контакты</a></li>
+                </ul>
+            </nav>
+    
+        </div>
+    
+        <div class="mobile-menu__box">
+        <footer class="mobile-menu__footer">
+    
+            <div class="mobile-menu__footer footer__icons">
+                <button class="footer__button footer__button--callback" href="#"><img src="img/call.svg"></button>
+                <button class="footer__button footer__button--feedback" href="#"><img src="img/chat.svg"></button>
+                <button class="footer__button" href="#"><img src="img/profile.svg"></button>
+            </div>
+    
+            <a class="mobile-menu__footer footer__email" href="mailto:mail@cps.com">mail@cps.com</a>
+    
+            <a class="mobile-menu__footer footer__tel" href="tel:88008908900">8 800 890 89000</a>
+    
+            <div class="mobile-menu__footer footer__lang">
+                <button class="footer__lang lang__button" href="#">RU</button>
+                <button class="footer__lang lang__button" href="#">EN</button>
+                <button class="footer__lang lang__button" href="#">CN</button>
+            </div>
+    
+        </footer>
+        </div>
+    </div>
+
+</aside>
+
+
     <header class="header">
         <div class="header__container container">
             <div class="header__box">
@@ -54,61 +111,6 @@
         </div>
     </nav>
 
-
-    <aside class="aside mobile-menu">
-        <div class="mobile-menu__container">
-            <div class="mobile-menu__box">
-          
-                <header class="mobile-menu__header">
-                    
-                    <div class="header__wrapper">
-                    <button class="mobile-menu__button popup-button" href="#"><img src="./img/back.svg"></button>
-                    <a href="#" class="mobile-menu__logo"><img src="./img/logo.svg"></a>
-                    </div>
-                    <div class="mobile-menu__wrapper">
-                      <button class="mobile-menu__button" href="#"><img src="./img/search.svg"></button>
-                    </div>
-                </header>
-            
-                <nav class = "mobile-menu__nav">
-                    <ul class="mobile-menu__list">
-                        <li class="mobile-menu__item"><a class="nav__link" href="#">Ремонт техники</a></li>
-                        <li class="mobile-menu__item"><a class="nav__link" href="#">Услуги и сервисы</a></li>
-                        <li class="mobile-menu__item"><a class="nav__link" href="#">Корпоративным клиентам</a></li>
-                        <li class="mobile-menu__item"><a class="nav__link" href="#">Продавцам техники</a></li>
-                        <li class="mobile-menu__item"><a class="nav__link" href="#">Партнерам</a></li>
-                        <li class="mobile-menu__item"><a class="nav__link" href="#">Производителям</a></li>
-                        <li class="mobile-menu__item"><a class="nav__link" href="#">Наши сервисные центры</a></li>
-                        <li class="mobile-menu__item"><a class="nav__link" href="#">Контакты</a></li>
-                    </ul>
-                </nav>
-        
-            </div>
-        
-            <div class="mobile-menu__box">
-            <footer class="mobile-menu__footer">
-        
-                <div class="mobile-menu__footer footer__icons">
-                    <button class="footer__button footer__button--callback" href="#"><img src="img/call.svg"></button>
-                    <button class="footer__button footer__button--feedback" href="#"><img src="img/chat.svg"></button>
-                    <button class="footer__button" href="#"><img src="img/profile.svg"></button>
-                </div>
-        
-                <a class="mobile-menu__footer footer__email" href="mailto:mail@cps.com">mail@cps.com</a>
-        
-                <a class="mobile-menu__footer footer__tel" href="tel:88008908900">8 800 890 89000</a>
-        
-                <div class="mobile-menu__footer footer__lang">
-                    <button class="footer__lang lang__button" href="#">RU</button>
-                    <button class="footer__lang lang__button" href="#">EN</button>
-                    <button class="footer__lang lang__button" href="#">CN</button>
-                </div>
-        
-            </footer>
-            </div>
-        </div>
-
-    </aside>
 
 
     <section class="main">
@@ -239,10 +241,9 @@
                   </ul>
                   
                   <div class="swiper-pagination"></div>
-                  <button  class="show-more brands__show-more" type="button" onclick="showFullText(this)" data-show="true">Показать все</button>
+                  <button  class="show-more brands__show-more" type="button">Показать все</button>
                 </div>
                 
-              </div>
 
               
               </main>
@@ -314,7 +315,6 @@
                   <div class="swiper-pagination"></div>
                 <button  class="show-more devices__show-more">Показать все</button>
               </div>
-            </div>
               </main>
           </div>
 
@@ -447,6 +447,8 @@
         </ul>
       </div>
     </footer>
+    
+
 
     <div class="modals">
       <div class="modals__overlay"></div>
@@ -484,6 +486,7 @@
         </div>    
         </div>
     </div>
+
 
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="./js/index.js" type="text/javascript"></script>
